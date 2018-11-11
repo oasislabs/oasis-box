@@ -1,0 +1,14 @@
+{
+  "ignore": [
+    "README.md"
+  ],
+  "commands": {
+    "Compile": "truffle compile",
+    "Migrate": "truffle migrate",
+    "Test contracts": "truffle test",
+    "Clean": "npm run clean"
+  },
+  "hooks": {
+    "post-unpack": "npm install"
+  }
+}
