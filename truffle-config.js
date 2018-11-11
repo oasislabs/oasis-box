@@ -11,7 +11,7 @@ module.exports = {
     // Oasis Devnet
     oasis: {
       provider: function () {
-        return new HDWalletProvider(MNEMONIC, "https://web3.oasiscloud.net");
+        return new HDWalletProvider(MNEMONIC, "https://web3.oasiscloud.io");
       },
       network_id: "42261"
     },
