@@ -1,6 +1,13 @@
 {
   "ignore": [
-    "README.md"
+    "README.md",
+    "contracts/Counter.sol",
+    "contracts/confidential-wasm-counter",
+    "contracts/confidential_Counter.sol",
+    "contracts/nested",
+    "contracts/wasm-counter",
+    "migrations/2_counter_migration.js",
+    "test/test-counters.js"
   ],
   "commands": {
     "Compile": "truffle compile",
