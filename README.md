@@ -10,7 +10,7 @@ If you're using Solidity outside of Contract Kit, ensure you have truffle v5 ins
 
 `npm uninstall -g truffle`
 
-`npm install -g truffle@5.0.0-beta.1`
+`npm install -g truffle@5.0.0-beta.2`
 
 Now download the truffle box.
 
