@@ -4,7 +4,7 @@ A truffle box to support compiling, migrating, and testing both Solidity and Rus
 
 ## Installation
 
-Note: It's suggested to use the [Contract Kit](https://github.com/oasislabs/contract-kit) docker image so that you can skip installation and take advantage of complete Truffle integration with Oasis. Currently in development is support for a Truffle workflow with Rust contracts outside of Contract Kit. In the meantine, if you're using Truffle to develop Rust contracts, we'll assume you're using Contract Kit.
+Note: It's suggested to use the [Contract Kit](https://docs.oasiscloud.io/en/latest/contract-kit/) docker image so that you can skip installation and take advantage of complete Truffle integration with Oasis. Currently in development is support for a Truffle workflow with Rust contracts outside of Contract Kit. In the meantine, if you're using Truffle to develop Rust contracts, we'll assume you're using Contract Kit.
 
 If you're using Solidity outside of Contract Kit, ensure you have truffle v5 installed. If you have another version of truffle installed you'll want to either uninstall it or ensure you're using v5 with this box.
 
