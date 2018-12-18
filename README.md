@@ -8,9 +8,7 @@ Note: It's suggested to use the [Contract Kit](https://docs.oasiscloud.io/en/lat
 
 If you're using Solidity outside of Contract Kit, ensure you have truffle v5 installed. If you have another version of truffle installed you'll want to either uninstall it or ensure you're using v5 with this box.
 
-`npm uninstall -g truffle`
-
-`npm install -g truffle@5.0.0-beta.2`
+`npm install -g truffle`
 
 Now download the truffle box.
 
