@@ -22,13 +22,13 @@ Once installed, you can use truffle commands like you would any other truffle pr
 - `truffle migrate --network oasis`
 - `truffle test --network oasis`.
 
-To mark your contract confidential, prefix your contract's filename with either `confidential_` or `confidential-*`, for example, `confidential_MyContract.sol` for Solidity or `confidential-my-contract-crate` for Rust. When your contract compiles, with one of the above truffle commands, its bytecode will be prepended with `b'\0enc'`. On deploy, this bytecode prefix will notify the Oasis runtime that the contract is to be run inside a secure enclave, at which point one should use [web3c.js](https://github.com/oasislabs/web3c.js) to communicate with the contract through an encrypted channel.
+To mark your contract confidential, prefix your contract's filename with either `confidential_` or `confidential-*`, for example, `confidential_MyContract.sol` for Solidity or `confidential-my-contract-crate` for Rust. When your contract compiles with one of the above truffle commands, its bytecode will be prepended with a header indicating that it should be deployed as a confidential contract. On deploy, the header indicates to the Oasis runtime that the contract is to be run inside a secure enclave, at which point one should use [web3c.js](https://github.com/oasislabs/web3c.js) to communicate with the contract through an encrypted channel.
 
 To do this, simply retrieve the contract's deploy address from the artifact, and instantiate a web3c.js Contract object with it. For example,
 
 ```
 const MyContract = artifacts.require("MyContract");
-const contractInstance = web3c.confidential.Contract(MyContract.abi, MyContract.address, { ... });
+const contractInstance = web3c.oasis.Contract(MyContract.abi, MyContract.address, { ... });
 ```
 
 For more details, see the [truffle](https://truffleframework.com/docs/truffle/overview) and [web3c.js](https://github.com/oasislabs/web3c.js) documentation.

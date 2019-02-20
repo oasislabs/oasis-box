@@ -6,7 +6,7 @@
   },
   "devDependencies": {
     "truffle-hdwallet-provider": "^1.0.0-web3one.0",
-    "oasis-compile": "^1.0.1",
+    "oasis-compile": "^2.0.0-beta1",
     "web3-provider-engine": "^14.1.0"
   },
   "keywords": [
@@ -19,6 +19,6 @@
     "url": "git+https://github.com/oasislabs/oasis-box.git"
   },
   "dependencies": {
-    "web3c": "^1.0.0"
+    "web3c": "^2.0.0-beta1"
   }
 }
