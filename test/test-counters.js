@@ -20,10 +20,10 @@ contract("Counter Contracts", (accounts) => {
   const contracts = [
     new web3c.eth.Contract(Counter.abi, Counter.address, options),
     new web3c.eth.Contract(NestedCounter.abi, NestedCounter.address, options),
-    new web3c.oasis.Contract(ConfidentialCounter.abi, ConfidentialCounter.address, options),
+    new web3c.confidential.Contract(ConfidentialCounter.abi, ConfidentialCounter.address, options),
     new web3c.eth.Contract(WasmCounter.abi, WasmCounter.address, options),
     new web3c.eth.Contract(NestedWasmCounter.abi, NestedWasmCounter.address, options),
-    new web3c.oasis.Contract(ConfidentialWasmCounter.abi, ConfidentialWasmCounter.address, options)
+    new web3c.confidential.Contract(ConfidentialWasmCounter.abi, ConfidentialWasmCounter.address, options)
   ];
 
   contracts.forEach((contract) => {

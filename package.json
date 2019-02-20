@@ -19,7 +19,6 @@
     "url": "git+https://github.com/oasislabs/oasis-box.git"
   },
   "dependencies": {
-    // TODO: bump this
-    "web3c": "^1.0.0"
+    "web3c": "2.0.0-beta1"
   }
 }
