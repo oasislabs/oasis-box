@@ -1,1 +1,5 @@
 .oasis-build
+node_modules/
+build/
+target/
+.web3c/
